@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EShop
+build_property.RootNamespace = EShop
+build_property.ProjectDir = D:\Git\EShopper\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Git\EShopper
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Git/EShopper/EShop/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RVNob3BcQXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/EShopper/EShop/Views/Categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RVNob3BcVmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/EShopper/EShop/Views/Categories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RVNob3BcVmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/EShopper/EShop/Views/Categories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RVNob3BcVmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/EShopper/EShop/Views/Categories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RVNob3BcVmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/EShopper/EShop/Views/Categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RVNob3BcVmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/EShopper/EShop/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RVNob3BcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/EShopper/EShop/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RVNob3BcVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/EShopper/EShop/Views/Shared/Components/Imagebar/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RVNob3BcVmlld3NcU2hhcmVkXENvbXBvbmVudHNcSW1hZ2ViYXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/EShopper/EShop/Views/Shared/Components/Navbar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RVNob3BcVmlld3NcU2hhcmVkXENvbXBvbmVudHNcTmF2YmFyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/EShopper/EShop/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RVNob3BcVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/EShopper/EShop/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RVNob3BcVmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/EShopper/EShop/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RVNob3BcVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/EShopper/EShop/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RVNob3BcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/EShopper/EShop/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RVNob3BcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/EShopper/EShop/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RVNob3BcVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-qgjhlnb26w
