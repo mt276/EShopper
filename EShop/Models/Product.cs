@@ -15,10 +15,13 @@ namespace EShop.Models
         [ForeignKey("Category")]
         public int CategoryID { get; set; }
         public Category? Category { get; set; }
+
         [Column(TypeName = "decimal(8,2)")]
-        public decimal? ProductPrice { get; set; }
+        public decimal ProductPrice { get; set; }
+
         [Column(TypeName = "decimal(2,2)")]
-        public decimal? ProductDiscount { get; set; }
+
+        public decimal ProductDiscount { get; set; } = 0;
         [StringLength(300)]
         public string? ProductPhoto { get; set; }
         [ForeignKey("Size")]

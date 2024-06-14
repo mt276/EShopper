@@ -1,4 +1,6 @@
-﻿namespace EShop.Models
+﻿using System.Linq;
+
+namespace EShop.Models
 {
     public class Cart
     {
@@ -24,10 +26,19 @@
         }
 
         public void RemoveLine(Product product) =>
-            Lines.RemoveAll(l=>l.Product.ProductID == product.ProductID);
-        
-        public decimal ComputeTotalValue() =>
-            (decimal)Lines.Sum(e => e.Product?.ProductPrice * e.Quantity);
+            Lines.RemoveAll(l => l.Product.ProductID == product.ProductID);
+
+        public decimal ComputeTotalValue()
+        {
+            decimal total = Lines.Sum(e =>
+            {
+
+                decimal discountedPrice = e.Product.ProductPrice * (1 - e.Product.ProductDiscount / 100);
+                return Math.Round(discountedPrice * e.Quantity, 2);
+            });
+            return total;
+
+        }
 
         public void Clear() => Lines.Clear();
     }
