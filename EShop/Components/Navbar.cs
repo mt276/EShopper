@@ -15,5 +15,6 @@ namespace EShop.Components
         {
             return View("Default",_context.Categories.ToList());
         }
+
     }
 }

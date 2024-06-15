@@ -9,6 +9,7 @@ using EShop.Data;
 using EShop.Models;
 using EShop.Models.ViewModels;
 using static EShop.Controllers.ProductsController;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EShop.Controllers
 {
@@ -27,6 +28,8 @@ namespace EShop.Controllers
             public int Max { get; set; }
         }
         [HttpPost]
+
+        
         public IActionResult GetFilteredProducts([FromBody] FilterData filterData)
         {
             var filterProducts = _context.Products.ToList();
@@ -57,6 +60,7 @@ namespace EShop.Controllers
         }
 
         // GET: Products
+
         public Task<IActionResult> Index(int productPage = 1)
         {
 
@@ -94,12 +98,13 @@ namespace EShop.Controllers
                         TotalItems = _context.Products.Count()
 
                     }
-                });
+                }
+            );
 
         }
         public async Task<IActionResult> ProductsByCat(int categoryID)
         {
-            var applicationDbContext = _context.Products.Where(p => p.CategoryID == categoryID).Include(p => p.Category).Include(p => p.Color).Include(p => p.Size);
+            var applicationDbContext = _context.Products.Where(p => p.CategoryID == categoryID);
             return View("Index", await applicationDbContext.ToListAsync());
         }
         // GET: Products/Details/5
@@ -124,6 +129,7 @@ namespace EShop.Controllers
         }
 
         // GET: Products/Create
+        [Authorize]
         public IActionResult Create()
         {
             ViewData["CategoryID"] = new SelectList(_context.Categories, "CategoryID", "CategoryID");
@@ -137,6 +143,7 @@ namespace EShop.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Create([Bind("ProductID,ProductName,ProductDescription,CategoryID,ProductPrice,ProductDiscount,ProductPhoto,SizeID,ColorID,IsTrandy,IsArrived")] Product product)
         {
             if (ModelState.IsValid)
@@ -152,6 +159,7 @@ namespace EShop.Controllers
         }
 
         // GET: Products/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -175,6 +183,7 @@ namespace EShop.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Edit(int id, [Bind("ProductID,ProductName,ProductDescription,CategoryID,ProductPrice,ProductDiscount,ProductPhoto,SizeID,ColorID,IsTrandy,IsArrived")] Product product)
         {
             if (id != product.ProductID)
@@ -209,6 +218,7 @@ namespace EShop.Controllers
         }
 
         // GET: Products/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -232,6 +242,7 @@ namespace EShop.Controllers
         // POST: Products/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var product = await _context.Products.FindAsync(id);
